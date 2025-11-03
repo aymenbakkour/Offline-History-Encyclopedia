@@ -1,28 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Offline History Encyclopedia</title>
-    <link rel="stylesheet" href="index.css">
+    <title>تاريخنا | موسوعة تاريخية شاملة</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Offline History Encyclopedia</h1>
-        <div class="search-container">
-            <input type="search" id="searchInput" placeholder="Search for a topic..." aria-label="Search encyclopedia">
-            <button id="searchButton">Search</button>
-        </div>
-    </header>
-    <nav>
-        <a href="#" data-period="ancient">Ancient History</a>
-        <a href="#" data-period="middle_ages">Middle Ages</a>
-        <a href="#" data-period="renaissance">Renaissance</a>
-        <a href="#" data-period="modern">Modern History</a>
-    </nav>
-    <main id="content" aria-live="polite">
-        <!-- Content will be loaded here by JavaScript -->
+
+    <div id="header-container"></div> 
+
+    <main id="timeline-container">
     </main>
-    <script type="module" src="index.tsx"></script>
+    
+    <div id="modal-container"></div> 
+
+    <script src="js/script.js"></script>
 </body>
 </html>
